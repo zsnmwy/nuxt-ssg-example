@@ -1,0 +1,42 @@
+### Nuxt SSG Build Server API Test
+
+# Health Check
+GET http://localhost:3000/health
+
+###
+
+# Trigger Build Task
+POST http://localhost:3000/api/build
+Content-Type: application/json
+
+{
+  "landingPageId": "test-page-001"
+}
+
+###
+
+# Trigger Another Build Task (Test Queue)
+POST http://localhost:3000/api/build
+Content-Type: application/json
+
+{
+  "landingPageId": "prod-page-123"
+}
+
+###
+
+# Error Test - Missing Parameter
+POST http://localhost:3000/api/build
+Content-Type: application/json
+
+{}
+
+###
+
+# Custom baseURL Build
+POST http://localhost:3000/api/build
+Content-Type: application/json
+
+{
+  "landingPageId": "campaign-2024-q1"
+}

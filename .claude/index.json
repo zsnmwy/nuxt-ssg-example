@@ -1,0 +1,68 @@
+{
+  "timestamp": "2025-11-27T00:27:48.000Z",
+  "project_name": "nuxt-ssg-example",
+  "project_type": "nuxt-ssg",
+  "root_path": "D:\\code\\nuxt-ssg-example",
+  "modules": [
+    {
+      "name": "app",
+      "path": "./app",
+      "type": "vue-app",
+      "entry_file": "app.vue",
+      "language": "vue3",
+      "has_tests": false,
+      "has_config": false,
+      "description": "应用核心模块，包含主要的 Vue 应用组件"
+    },
+    {
+      "name": "public",
+      "path": "./public",
+      "type": "static-assets",
+      "entry_file": null,
+      "language": "static",
+      "has_tests": false,
+      "has_config": false,
+      "description": "静态资源文件目录"
+    }
+  ],
+  "coverage": {
+    "total_files": 5,
+    "scanned_files": 5,
+    "coverage_percentage": 100,
+    "ignored_files": 0,
+    "large_files_skipped": 0
+  },
+  "scan_summary": {
+    "main_technologies": ["nuxt", "vue3", "typescript"],
+    "package_manager": "pnpm",
+    "build_tool": "nuxt",
+    "framework_version": "4.2.1",
+    "has_type_script": true,
+    "has_tests": false,
+    "has_ci_config": false,
+    "has_docker": false
+  },
+  "gaps": {
+    "missing_tests": true,
+    "missing_ci": true,
+    "missing_docker": true,
+    "missing_linting_config": true,
+    "recommended_additions": [
+      "pages/ 目录 - 用于添加页面路由",
+      "components/ 目录 - 用于复用组件",
+      "layouts/ 目录 - 用于自定义布局",
+      "assets/ 目录 - 用于样式和静态资源",
+      "tests/ 目录 - 用于单元和集成测试",
+      "eslint 配置 - 用于代码质量检查",
+      "prettier 配置 - 用于代码格式化"
+    ]
+  },
+  "truncated": false,
+  "next_steps": [
+    "添加 pages 目录和示例页面",
+    "配置 ESLint 和 Prettier",
+    "添加测试框架（Vitest）",
+    "考虑添加 Pinia 状态管理",
+    "配置 CI/CD 流程"
+  ]
+}

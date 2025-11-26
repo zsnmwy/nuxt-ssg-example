@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tsx server/test.ts:*)",
+      "Bash(pnpm tsx:*)",
+      "Bash(curl -X POST http://localhost:3000/api/build:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill /PID 41056 /F)",
+      "Bash(cmd.exe //c taskkill:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(docker build -t nuxt-ssg-build-server .:*)",
+      "Bash(docker run:*)",
+      "Bash(curl -s http://localhost:3000/health)",
+      "Bash(__NEW_LINE__ echo \"\")",
+      "Bash(docker:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
