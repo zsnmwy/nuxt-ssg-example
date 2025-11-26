@@ -14,7 +14,8 @@
       "Bash(curl -s http://localhost:3000/health)",
       "Bash(__NEW_LINE__ echo \"\")",
       "Bash(docker:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
